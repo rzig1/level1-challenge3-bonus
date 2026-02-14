@@ -1,0 +1,46 @@
+{
+  "technicians": [
+    {
+      "id": "1",
+      "name": "Ali"
+    },
+    {
+      "id": "2",
+      "name": "Sami"
+    },
+    {
+      "id": "3",
+      "name": "Nour"
+    }
+  ],
+  "interventions": [
+    {
+      "id": "1",
+      "title": "Fix network issue",
+      "description": "Router not working",
+      "technicianId": 1,
+      "status": "Done"
+    },
+    {
+      "id": "2",
+      "title": "Install printer",
+      "description": "New printer setup in HR office",
+      "technicianId": 1,
+      "status": "In Progress"
+    },
+    {
+      "id": "3",
+      "title": "Server maintenance",
+      "description": "Monthly server update",
+      "technicianId": 2,
+      "status": "Done"
+    },
+    {
+      "id": "4",
+      "title": "Fix email issue",
+      "description": "Emails not syncing",
+      "technicianId": 3,
+      "status": "To Do"
+    }
+  ]
+}

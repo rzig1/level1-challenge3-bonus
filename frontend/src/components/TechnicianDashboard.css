@@ -1,0 +1,65 @@
+.tech-container {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.tech-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--text-main);
+}
+
+.tech-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.tech-status {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  margin-bottom: 15px !important;
+}
+
+/* Status specific colors (Logic based on text) */
+.tech-card:has(p:contains("Done")) { border-left: 5px solid #10b981; }
+
+.tech-button {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-button:hover {
+  background: #334155;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  background: #f1f5f9;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e1;
+}
