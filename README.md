@@ -1,16 +1,16 @@
 # 🛠️ Technical Interventions Manager
 
-A modern, responsive web application designed to help companies manage and track technical maintenance tasks. This project features a dual-interface system for Administrators and Technicians, utilizing a RESTful mock backend for real-time data persistence.
+A modern, responsive web application designed to help companies manage and track technical maintenance tasks. This project features a dual-interface system for **Administrators** and **Technicians**, utilizing a RESTful mock backend for real-time data persistence.
 
 ---
 
 ## 🚀 Project Overview
 This application fulfills the core requirements of a technical management system:
-* **Role-Based Access**: Switch between Admin and Technician views.
-* **Assignment Logic**: Admins can assign tasks to specific team members.
-* **Lifecycle Management**: Follows the strict workflow: **To Do** → **In Progress** → **Done**.
-* **Data Persistence**: Uses a JSON-based database to store interventions and staff details.
 
+- **Role-Based Access**: Switch between Admin and Technician views.
+- **Assignment Logic**: Admins can assign tasks to specific team members.
+- **Lifecycle Management**: Follows the strict workflow: **To Do → In Progress → Done**.
+- **Data Persistence**: Uses a JSON-based database to store interventions and staff details.
 
 ---
 
@@ -34,21 +34,6 @@ This application fulfills the core requirements of a technical management system
 │   ├── package.json                     # Frontend dependencies
 │   └── vite.config.js                   # Vite configuration
 └── README.md                            # Project documentation
-
-
-Gemini said
-Based on your folder structure, I have updated the README.md to reflect the specific division between the backend and frontend folders.
-
-Here is the markdown code for your updated README.md:
-
-Markdown
-# 🛠️ Technical Interventions Manager
-
-A modern, responsive web application designed to help companies manage and track technical maintenance tasks. This project features a dual-interface system for Administrators and Technicians, utilizing a RESTful mock backend for real-time data persistence.
-
----
-
-
 🛠️ Setup Guide
 1. Prerequisites
 Ensure you have Node.js installed on your system.
@@ -56,26 +41,24 @@ Ensure you have Node.js installed on your system.
 2. Launch the Backend (JSON Server)
 Navigate to the backend folder and start the server to enable the API:
 
-Bash
 cd backend
 json-server --watch db.json --port 3001
-The API will be available at http://localhost:3001.
+The API will be available at: http://localhost:3001.
 
 3. Launch the Frontend
 In a new terminal window, navigate to the frontend folder, install dependencies, and start the development server:
 
-Bash
 cd frontend
 npm install
 npm run dev
-The application will typically run at http://localhost:5173.
+The application will typically run at: http://localhost:5173.
 
 📊 Database Schema (db.json)
 The system manages two main collections to ensure data integrity:
 
 Collection	Description	Key Fields
 technicians	Staff members available for tasks	id, name
-interventions	The technical tickets/tasks	id, title, description, technicianId, status
+interventions	Technical tickets/tasks	id, title, description, technicianId, status
 💡 How to Use
 Admin View: Fill out the "Create Intervention" form and assign it to a technician.
 
@@ -90,6 +73,4 @@ CSS3: Custom modern styling with a professional SaaS-inspired aesthetic.
 
 JSON-Server: To provide a full mock REST API.
 
-Axios: For seamless HTTP communication between frontend and backend
-
-
+Axios: For seamless HTTP communication between frontend and backend.
