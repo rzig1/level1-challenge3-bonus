@@ -48,37 +48,6 @@ A modern, responsive web application designed to help companies manage and track
 
 ---
 
-## 🚀 Project Overview
-This application fulfills the core requirements of a technical management system:
-* **Role-Based Access**: Switch between Admin and Technician views.
-* **Assignment Logic**: Admins can assign tasks to specific team members.
-* **Lifecycle Management**: Follows the strict workflow: **To Do** → **In Progress** → **Done**.
-* **Data Persistence**: Uses a JSON-based database to store interventions and staff details.
-
-
----
-
-## 🏗️ Project Structure
-```text
-/LEVEL1-CHALLENGE
-├── /backend
-│   └── db.json                          # Mock Database (REST API Source)
-├── /frontend
-│   ├── /src
-│   │   ├── /components
-│   │   │   ├── AdminDashboard.jsx       # Admin logic & creation form
-│   │   │   ├── AdminDashboard.css       # Admin-specific styles
-│   │   │   ├── TechnicianDashboard.jsx  # Technician logic & updates
-│   │   │   └── TechnicianDashboard.css  # Technician-specific styles
-│   │   ├── api.js                       # Axios configuration
-│   │   ├── App.jsx                      # Main entry & role switching
-│   │   ├── main.jsx                     # React DOM rendering
-│   │   └── style.css                    # Global application styles
-│   ├── index.html                       # Entry HTML file
-│   ├── package.json                     # Frontend dependencies
-│   └── vite.config.js                   # Vite configuration
-└── README.md                            # Project documentation
-
 
 🛠️ Setup Guide
 1. Prerequisites
