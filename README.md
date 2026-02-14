@@ -34,6 +34,10 @@ This application fulfills the core requirements of a technical management system
 │   ├── package.json                     # Frontend dependencies
 │   └── vite.config.js                   # Vite configuration
 └── README.md                            # Project documentation
+
+```
+
+
 🛠️ Setup Guide
 1. Prerequisites
 Ensure you have Node.js installed on your system.
